@@ -4,8 +4,15 @@
 <head>    
 </head>
 <body>
-    <label>用户名：</label> <input type="text" name="username" /><br />
-    <label>密码：</label><input type="password" name="password" /><br />
+    <form method="post">
+    </form>
+    <p style="font-size:20px">注册</p>
+    <label>用户名：</label> <input type="text" name="username"/><br />
+    <label>密码：</label><input type="password" name="password"/><br />
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="icon" />
+        <button type="reset">reset</button>
+    </form>
     <!-- 不要用它存储敏感信息 -->
     <input type="hidden" name="fg" value="潜伏者" />
     <label>性别：</label>
@@ -17,9 +24,17 @@
     <label>爱好：</label>
     <label><input type="checkbox" name="hobby" value="table-tenis" />乒乓球</label>
     <label><input type="checkbox" name="hobby" value="chess" />象棋</label>
-    <label><input type="checkbox" name="hobby" value="LOL" />LOL</label>
+    <label><input type="checkbox" name="hobby" value="LOL" />LOL</label><br />
+
     <label>自我介绍：</label><br />
     <textarea name="selfDescription"></textarea><br />
+    <label>年龄：</label>
+    <select name="age">
+        <!-- 往后台传递的是value -->
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select><br />
     <!--<button type="submit">按钮</button>-->
     <input type="submit" value="提交" />
     <input type="reset" value="重置" />
