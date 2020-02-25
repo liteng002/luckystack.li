@@ -1,0 +1,27 @@
+﻿@page
+<!DOCTYPE html>
+<html>
+<head>    
+</head>
+<body>
+    <label>用户名：</label> <input type="text" name="username" /><br />
+    <label>密码：</label><input type="password" name="password" /><br />
+    <!-- 不要用它存储敏感信息 -->
+    <input type="hidden" name="fg" value="潜伏者" />
+    <label>性别：</label>
+    <!-- 使用name属性进行分组 -->
+    <!-- 小技巧：用label包裹checkbox -->
+    <label><input type="radio" name="gender" value="male" checked /> 男</label>
+    <!-- radio和checkbox只能disabled不能readonly（实际上是bug） -->
+    <input type="radio" name="gender" value="female" readonly />女 <br />
+    <label>爱好：</label>
+    <label><input type="checkbox" name="hobby" value="table-tenis" />乒乓球</label>
+    <label><input type="checkbox" name="hobby" value="chess" />象棋</label>
+    <label><input type="checkbox" name="hobby" value="LOL" />LOL</label>
+    <label>自我介绍：</label><br />
+    <textarea name="selfDescription"></textarea><br />
+    <!--<button type="submit">按钮</button>-->
+    <input type="submit" value="提交" />
+    <input type="reset" value="重置" />
+</body>
+</html>
