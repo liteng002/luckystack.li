@@ -1,14 +1,13 @@
 ﻿@page
-<!DOCTYPE html>
-<html>
-<head>
+@{
+    Layout = "_Layout";
+}
 
-</head>
-<body>
-    <form method="post">
-    </form>
+<form method="post">
+
     <p style="font-size:24px;color:red;">说明</p>
-    <ol><!--ordered list-->
+    <ol>
+        <!--ordered list-->
         <li>我们希望通过<a href="/index">一起帮</a>，能直接解决大家在电脑操作/软件使用/编程学习等方面的具体问题。</li>
         <li>现在互联网远程技术（比如QQ桌面共享）已经非常成熟，当我们再遇到上述问题，如果别人能直接远程给予帮助，岂不是好？</li>
         <li>当然，你也可以在你熟悉的领域去帮助别人。由此而形成我们这个“你帮他他帮我我帮你，大家一起帮”的网上互助社区平台。</li>
@@ -18,7 +17,7 @@
 
 
     <p style="font-size:20px">用户登录</p>
-    <label>用户名：（*必填）</label> 
+    <label>用户名：（*必填）</label>
     <input type="text" name="username" value="不是昵称，是登录用户名" /><br />
     <label>密码：（*必填）</label>
     <input type="password" name="password" disabled value="" /><br />
@@ -39,6 +38,4 @@
     </span>
     <!--<button type="submit">按钮</button>-->
     <input type="submit" value="提交" />
-</body>
-
-</html>
+</form>

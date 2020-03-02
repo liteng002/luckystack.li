@@ -1,11 +1,10 @@
 ﻿@page
-<!DOCTYPE html>
-<html>
-<head>    
-</head>
-<body>
-    <form method="post">
-    </form>
+@{
+    Layout = "_Layout";
+}
+
+<form method="post">
+
     <p style="font-size:20px">注册</p>
     <span style="margin-left:4px;">
         说明
@@ -44,10 +43,11 @@
     <label>密码：（*必填）</label>
     <input class="form-control" data-val="true" data-val-length="* 密码的长度不能小于4，大于20" data-val-length-max="20" data-val-length-min="4" data-val-required="* 密码不能为空" id="Password" name="Password" placeholder="不少于4个字符" type="password">
     <br />
-    <form method="post" enctype="multipart/form-data">
-        <input type="file" name="icon" />
-        <button type="reset">reset</button>
-    </form>
+</form>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="icon" />
+    <button type="reset">reset</button>
+
     <!-- 不要用它存储敏感信息 -->
     <input type="hidden" name="fg" value="潜伏者" />
     <label>性别：</label>
@@ -73,5 +73,4 @@
     <!--<button type="submit">按钮</button>-->
     <input type="submit" value="提交" />
     <input type="reset" value="重置" />
-</body>
-</html>
+</form>

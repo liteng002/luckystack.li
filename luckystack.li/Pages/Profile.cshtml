@@ -1,43 +1,44 @@
 ﻿@page
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-    <h3>个人资料</h3>
+@{
+    Layout = "_Layout";
+}
 
-    <form method="post" enctype="multipart/form-data">
-        头像：（*仅限jpg/png/gif）
-        <br />
-        <input type="file" name="icon" />
-        <button type="reset">浏览</button>
-    </form>
+<h3>个人资料</h3>
+
+<form method="post" enctype="multipart/form-data">
+    头像：（*仅限jpg/png/gif）
+    <br />
+    <input type="file" name="icon" />
+
 
     <label>性别：</label>
     <label>
         <input type="radio" name="gender" value="male" />男
     </label>
-    <input type="radio" name="gender" value="female" />女
+    <label>
+        <input type="radio" name="gender" value="female" />女
+    </label>
+
     <br />
     <label>生日：</label><br />
-    <select name="age">
+    <select name="year">
         <option>2016</option>
         <option>2015</option>
         <option>2014</option>
     </select>年</ span>
 
-    <select name="age">
+    <select name="month">
         <option>1</option>
         <option>2</option>
         <option>3</option>
     </select>月</ span>
-    <select name="age">
-        <option>白羊</option>
-        <option>天秤</option>
-        <option>蝎子</option>
+    <select name="star">
+        <constellation>白羊</constellation>
+        <constellation>天秤</constellation>
+        <constellation>蝎子</constellation>
     </select>星座<br />
     <label>关键字：（*使用空格分隔）</label><br />
-    <select>
+    <select name="star">
         <option>编程开发语言</option>
         <option>工具软件</option>
         <option>顾问咨询</option>
@@ -47,17 +48,16 @@
         <option>法律</option>
         <option>财务</option>
     </select>
-    <input type="text" name="username" value="自定义填写" /><br />
+    <input type="text" name="keyword" value="自定义填写" /><br />
     <label>自我介绍：</label>
     <textarea name="selfDescription">简单的介绍一下自己吧</textarea><br />
     <input type="reset" value="重置" />
     <input type="submit" value="提交" />
+</form>
 
-    <h4>说明</h4>
-    <ol>
-        <li>头像仅接受jpg/png/gif格式，大小不超过256KB。</li>
-        <li>头像图片的建议宽度为300像素左右，过宽或过窄都有可能失真。</li>
-        <li>自我介绍的字数不要超过255字</li>
-    </ol>
-</body>
-</html>
+<h4>说明</h4>
+<ol>
+    <li>头像仅接受jpg/png/gif格式，大小不超过256KB。</li>
+    <li>头像图片的建议宽度为300像素左右，过宽或过窄都有可能失真。</li>
+    <li>自我介绍的字数不要超过255字</li>
+</ol>
