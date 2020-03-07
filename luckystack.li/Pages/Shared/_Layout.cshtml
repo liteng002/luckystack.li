@@ -10,92 +10,228 @@
     <title>首页·一起帮</title>
     <!--响应式声明-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rle="stylesheet" href="~/lib/Content/font-awesome.min.css" />
+
     <style>
-        header {
+
+        /*header {
             display: flex;
             flex-direction: row;
             position: fixed;
         }
-
         #vip {
             float: right;
             position: relative;
         }
-
         aside {
             float: right;
             position: fixed;
-        }
+        }*/
     </style>
 </head>
 <body>
     <header>
-        <!--上图标-->
-        <a href="http://17bang.ren"><img src="~/images/QQ图片20200224205436.png" /></a>
-        <h4 style="color: black ">一起帮</h4>
-        <p style="color: darkgrey">·网络互助平台</p>
         <nav>
-            <ul>
-                <li style="float:left; width:200px; height:200px;">
-                    求助
-                    <ul>
-                        <li>督导班</li>
-                        <li>列表</li>
-                        <li>疑问发布</li>
-                        <li>疑问列表</li>
-                        <li>列表</li>
-                        <li>发布</li>
-                    </ul>
-                </li>
-                <li style="float:left; width:200px; height:200px;">
-                    督促
-                    <ul>
-                        <li>求督促</li>
-                        <li>督促别人</li>
-                        <li>我的目标</li>
-                        <li>我的督促</li>
-                        <li>未交作业</li>
-                    </ul>
-                </li>
-                <li style="float:left; width:200px; height:200px;">
-                    文章
-                    <ul>
-                        <li><a href="/Article" target="_self">列表</a></li>
-                        <li>开通</li>
+            <a href="http://17bang.ren"><img src="~/images/QQ图片20200224205436.png" /></a>
+            <h4 class="navbar-brand" href="#">一起帮·网络互助平台</h4>
 
-                    </ul>
+            <ul class="nav nav-tabs">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        求助
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
                 </li>
-                <li style="float:left; width:200px; height:200px;">
-                    用户
-                    <ul>
-                        <li>新手任务</li>
-                        <li>我的主页</li>
-                        <li>帮帮豆</li>
-                        <li>帮帮点</li>
-                        <li>帮帮币</li>
-                        <li>我的密码</li>
-                        <li><a href="/contact" title="添加联系方式" target="_self">联系方式</a></li>
-                        <li><a href="/Profile" title="修改资料" target="_self">个人资料</a></li>
-                        <li>退出登录</li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
                 </li>
-                <li style="float:left; width:200px; height:200px;">
-                    后台
-                    <ul>
-                        <li>邀请注册</li>
-                        <li>我的消息</li>
-                        <li>我的草稿</li>
-                        <li>联系方式</li>
-                        <li>侧边栏</li>
-                        <li>购买</li>
-                        <li>出售</li>
-                        <li>已购买</li>
-                        <li>已出售</li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
                 </li>
             </ul>
-        </nav>
 
+
+            @*<ul class="dropdown row">
+            <li>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    求助
+                </button>
+            </li>
+            <li class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">督导班</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">列表</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">疑问发布</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">疑问列表</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">列表</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">发布</a>
+            </li>
+        </ul>
+        <ul class="dropdown">
+            <li>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    督促
+                </button>
+            </li>
+            <li class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">督促别人</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">我的目标</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">我的督促</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">未交作业</a>
+            </li>
+        </ul>*@
+            @*<ul class="dropdown">
+            <li>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    文章
+                </button>
+            </li>
+            <li class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">列表</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">开通</a>
+            </li>
+        </ul>*@
+            @*<ul class="dropdown">
+            <li>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    用户
+                </button>
+            </li>
+            <li class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">新手任务</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">我的主页</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">帮帮豆</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">帮帮点</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">帮帮币</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">我的密码</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">联系方式</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">个人资料</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">退出登录</a>
+            </li>
+        </ul>
+        <ul class="dropdown">
+            <li>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    后台
+                </button>
+            </li>
+            <li class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">邀请注册</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">我的消息</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">我的草稿</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">联系方式</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">侧边栏</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">购买</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">出售</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">已购买</a>
+            </li>
+            <li class="col-sm">
+                <a class="dropdown-item" href="#">已出售 </a>
+            </li>
+        </ul>*@
+        </nav>
     </header>
     <main>
         @RenderBody()
