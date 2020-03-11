@@ -132,6 +132,7 @@ namespace CSharpL
             #endregion
 
 
+
             #region MyRegion
             //6.生成一个元素（值随机）从小到大排列的数组
             //int[] order = new int[10];
