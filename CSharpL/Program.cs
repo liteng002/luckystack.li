@@ -115,7 +115,6 @@ namespace CSharpL
             //string[,] six = { { "李腾", "刘江平", "王明志", "阿泰", "黄蔓杰", "赵淼" },
             //                   { "陌城", "川有", "王月", "阿泰", "bili", "推理" }, };
 
-
             //for (int i = 0; i < six.GetLength(1); i++)
             //{
             //    Console.WriteLine($"{six[0, i]}在直播间的名字叫{six[1, i]}");
