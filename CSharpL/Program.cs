@@ -8,8 +8,41 @@ namespace CSharpL
         private static int strAge;
         private static object calendar;
 
+        /// <summary>
+        /// 把两个数相乘
+        /// </summary>
+        /// <param name="a">第一个数</param>
+        /// <param name="b">第二个数</param>
+        /// <returns>相乘的结果</returns>
+        static int add(int a, int b) 
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == 3)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
+            return a * b;
+
+        }
+
         static void Main(string[] args)
         {
+
+            int result = add(5,6);
+            Console.WriteLine(result);
+            Console.WriteLine(add(4,5));
+
+
+
+
+
+
 
 
             ///http://17bang.ren/Article/438
