@@ -8,35 +8,64 @@ namespace CSharpL
         private static int strAge;
         private static object calendar;
 
-        /// <summary>
-        /// 把两个数相乘
-        /// </summary>
-        /// <param name="a">第一个数</param>
-        /// <param name="b">第二个数</param>
-        /// <returns>相乘的结果</returns>
-        static int add(int a, int b) 
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                if (i == 3)
-                {
+        ///// <summary>
+        ///// 把两个数相乘
+        ///// </summary>
+        ///// <param name="a">第一个数</param>
+        ///// <param name="b">第二个数</param>
+        ///// <returns>相乘的结果</returns>
+        //static int add(int a, int b)
+        //{
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        if (i == 3)
+        //        {
 
-                }
-                else
-                {
+        //        }
+        //        else
+        //        {
 
-                }
-            }
-            return a * b;
+        //        }
+        //    }
+        //    return a * b;
 
-        }
+        //}
 
+        //static int genMax(params int[] array)//add(inta,intb)
+        //{
+        //    int max = array[0];
+        //    for (int i = 1; i < array.Length; i++)
+        //    {
+        //        if (max < array[i])
+        //        {
+        //            max = array[i];
+        //        }
+        //        else
+        //        {
+        //            //nothing
+        //        }
+
+        //    }
+        //    return max;
+        //}
+
+        
         static void Main(string[] args)
         {
 
-            int result = add(5,6);
-            Console.WriteLine(result);
-            Console.WriteLine(add(4,5));
+            //int result = add(5, 6);
+            //Console.WriteLine(result);
+            //Console.WriteLine(add(4, 5));
+
+
+            //genMax(new int[] { 3, 4, 5});
+            //genMax(4, 6, 9, 12);
+            //Console.WriteLine(genMax(4, 6, 9, 12));
+
+
+
+           // publish("源栈欢迎您");
+
 
 
 
@@ -168,31 +197,49 @@ namespace CSharpL
 
             #region MyRegion
             //6.生成一个元素（值随机）从小到大排列的数组
-            //int[] order = new int[10];
-            //for (int i = 0; i < order.Length; i++)
+
+            //int[] ids = new int[10];
+            //for (int i = 0; i < ids.Length; i++)
             //{
-            //    order[i] = new Random().Next(1000);
+            //    ids[i] = new Random().Next(6,1000);
             //}
-            //Console.WriteLine(order);
+            //for (int j = 0; j < ids.Length - 1; j++)
+            //{
+            //    for (int k = 0; k < ids.Length - 1 - j; k++)
+            //    {
+            //        if (ids[k] > ids[k + 1])
+            //        {
+            //            int temp = ids[k];
+            //            ids[k] = ids[k + 1];
+            //            ids[k + 1] = temp;
+            //        }//else nothing
+            //    }
+            //}
 
-
-
+            //for (int l = 0; l < ids.Length; l++)
+            //{
+            //    Console.Write(ids[l] + ",");
+            //}
 
 
             #endregion
+
+
+
+
             ////总价
             //int i = 898;
             //int j = 88;
-            //Console.WriteLine(i+j);
+            //Console.WriteLine(i + j);
             ////学费
-            //int k = 986;           
-            //Console.WriteLine(k-j);
+            //int k = 986;
+            //Console.WriteLine(k - j);
             ////一天的学费
             //float t = 5;
-            //Console.WriteLine(i/t);
+            //Console.WriteLine(i / t);
             ////五天的学费
             //double o = 179.6;
-            //Console.WriteLine(o*t);
+            //Console.WriteLine(o * t);
 
 
             ////小数点两位没做出来
@@ -209,8 +256,6 @@ namespace CSharpL
             //int a = 10;
             //bool result = (a + 3 > 12) && a < 3.14 * 4 && a != 11;
             //Console.WriteLine((a + 3 > 12) && a < 3.14 * 4 && a != 11);
-
-
 
 
 
@@ -356,7 +401,24 @@ namespace CSharpL
 
 
 
-
+           // Console.WriteLine(genMax(6, 4, 8, 2));
         }
+
+       
+
+        //static int genMax(params int[] array)
+        //{
+        //    int min = array[0];
+        //    for (int i = 1; i < array.Length; i++)
+        //    {
+        //        if (min < array[i])
+        //        {
+        //            min = array[i];
+        //        }//else nothing
+        //    }
+        //    return min;
+        //}
+
     }
+
 }
